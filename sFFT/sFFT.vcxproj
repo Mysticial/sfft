@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="AVX|Win32">
+      <Configuration>AVX</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="AVX|x64">
+      <Configuration>AVX</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FMA4|Win32">
+      <Configuration>FMA4</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FMA4|x64">
+      <Configuration>FMA4</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SSE3|Win32">
+      <Configuration>SSE3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SSE3|x64">
+      <Configuration>SSE3</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7680B796-ECDD-4860-A1A7-D50B26526E4F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sFFT</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AVX|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AVX|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AVX|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='AVX|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AVX|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='AVX|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;sfft_dp_x86_SSE3;DLL_BUILD_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AVX|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;DLL_BUILD_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SSE3|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;sfft_dp_x86_SSE3;DLL_BUILD_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='AVX|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;sfft_dp_x86_AVX;DLL_BUILD_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FMA4|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;sfft_dp_x86_FMA4;DLL_BUILD_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/arch:AVX %(AdditionalOptions)</AdditionalOptions>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\source_v2\Debuggers.c" />
+    <ClCompile Include="..\source_v2\sfft_malloc.c" />
+    <ClCompile Include="..\source_v2\WallClock.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Basic\sFFT1_cb_tk.h" />
+    <ClInclude Include="..\source\Block\sFFT1_cb_pb_b2.h" />
+    <ClInclude Include="..\source\Block\sFFT1_cb_pb_b4.h" />
+    <ClInclude Include="..\source\Block\sFFT1_cb_pb_bk.h" />
+    <ClInclude Include="..\source\Globals.h" />
+    <ClInclude Include="..\source\Profiles.h" />
+    <ClInclude Include="..\source\sfft.h" />
+    <ClInclude Include="..\source\Tools\AlignedMalloc.h" />
+    <ClInclude Include="..\source\Tools\BitReverse.h" />
+    <ClInclude Include="..\source\Tools\DataTypes.h" />
+    <ClInclude Include="..\source\Tools\DebugPrinting.h" />
+    <ClInclude Include="..\source\Tools\Padding.h" />
+    <ClInclude Include="..\source\Tools\TwiddleTable.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_convert.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_Default.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t16_Default.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t2_Default.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t32_Default.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t4_Default.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t64_Default.h" />
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t8_Default.h" />
+    <ClInclude Include="..\source\v0_Default\sFFT1_cb_tables_M_Default.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_convert_Power7.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_Power7.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t16_Power7.h" />
+    <ClInclude Include="..\source\v1_power7\sFFT1_cb_f64v1_t2_Power7.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t32_Power7.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t4_Power7.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t64_Power7.h" />
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t8_Power7.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_convert_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t16_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t2_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t32_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t4_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t64_SSE3.h" />
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t8_SSE3.h" />
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_convert_AVX.h" />
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_AVX.h" />
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_t16_AVX.h" />
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_t32_AVX.h" />
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_t64_AVX.h" />
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_b2.h" />
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_b4.h" />
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_r2.h" />
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_r4.h" />
+    <ClInclude Include="..\source_v2\Debuggers.h" />
+    <ClInclude Include="..\source_v2\Globals.h" />
+    <ClInclude Include="..\source_v2\PointBlock\sfft_cb_pb_b2.h" />
+    <ClInclude Include="..\source_v2\PointBlock\sfft_block_headers.h" />
+    <ClInclude Include="..\source_v2\PointBlock\sfft_block_internals.h" />
+    <ClInclude Include="..\source_v2\PointBlock\sfft_pb_core_headers.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Cache\sfft_cb_pb_b2.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Cache\sfft_cb_pb_b4.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Cache\sfft_cb_pb_bk.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_cm_b2 %28disabled%29.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_cm_b4.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_cm_bk.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mc_b2.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mc_b4.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mc_bk.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mm_b2.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mm_b4.h" />
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mm_bk.h" />
+    <ClInclude Include="..\source_v2\Profiles.h" />
+    <ClInclude Include="..\source_v2\sfft_malloc.h" />
+    <ClInclude Include="..\source_v2\sfft_padding.h" />
+    <ClInclude Include="..\source_v2\Tables\sfft_cbv0_tables_M.h" />
+    <ClInclude Include="..\source_v2\Tables\sfft_cbv1_tables_M.h" />
+    <ClInclude Include="..\source_v2\Tables\sfft_cbv2_tables_M.h" />
+    <ClInclude Include="..\source_v2\Tables\sfft_cb_tables_M_headers.h" />
+    <ClInclude Include="..\source_v2\Tables\sfft_cb_tables_M_internals.h" />
+    <ClInclude Include="..\source_v2\Tools\sfft_bitreverse.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_bitreverse.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_Default.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t16_Default.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t32_Default.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t4_Default.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t64_Default.h" />
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t8_Default.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_bitreverse_SSE2.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_SSE3.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t16_SSE3.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t32_SSE3.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t4_SSE3.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t64_SSE3.h" />
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t8_SSE3.h" />
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_AVX.h" />
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_bitreverse_AVX.h" />
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_t16_AVX.h" />
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_t32_AVX.h" />
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_t64_AVX.h" />
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b2.h" />
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b3.h" />
+    <ClInclude Include="..\source_v2\vK_Generic\sfft_cb_tg_b4.h" />
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b5.h" />
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b7.h" />
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_r2.h" />
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_r4.h" />
+    <ClInclude Include="..\source_v2\WallClock.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

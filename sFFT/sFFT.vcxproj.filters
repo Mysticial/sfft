@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\old">
+      <UniqueIdentifier>{7a614379-2c2c-4892-b925-92dfaa2094d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\Basic">
+      <UniqueIdentifier>{66a26748-d73c-49b3-895a-716cda6b7260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\Block">
+      <UniqueIdentifier>{63aac025-0bf3-4ac1-8531-6547507cdd0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\Tools">
+      <UniqueIdentifier>{93c614cb-cf26-4355-b19b-ef168ef5d9ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\v0_Default">
+      <UniqueIdentifier>{20ee5a5c-5b79-400e-8a9b-903096e3b340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\v1_Power7">
+      <UniqueIdentifier>{9ff1e3bb-e9c1-4f8b-aebd-e3edcc7a9924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\v1_SSE3">
+      <UniqueIdentifier>{4da92ba6-235a-4b8f-b191-cded70f016cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\v2_AVX">
+      <UniqueIdentifier>{4aceac73-84b1-4fa3-bb16-7b289229c832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\old\vk_Generic">
+      <UniqueIdentifier>{d691b601-12fa-4c89-b751-01a7b4194c2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tables">
+      <UniqueIdentifier>{00d0fc8d-11c0-4bc4-965e-1924c817f06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\v0_Default">
+      <UniqueIdentifier>{6f6d3e89-3e46-4599-89b9-0661224cd985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\vk_Generic">
+      <UniqueIdentifier>{6f7d7439-5b28-454f-bacc-a3aed3fdb8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\v1_SSE3">
+      <UniqueIdentifier>{e07cafca-022c-450f-b836-8d2b1078be80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\v2_AVX">
+      <UniqueIdentifier>{7ac47906-a1f0-4629-ada5-1fa418ca3891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PointBlock_Cache">
+      <UniqueIdentifier>{33184095-33b1-46bd-82cc-ec7f7109e241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PointBlock_Memory">
+      <UniqueIdentifier>{c3930d52-272e-4041-bd24-df561b052ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PointBlock">
+      <UniqueIdentifier>{d3529f3b-aaa4-4240-9d7a-22d67a91b711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{f8c9e38d-c508-4467-89b9-f52d9c5497c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source_v2\sfft_malloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source_v2\WallClock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source_v2\Debuggers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Tools\AlignedMalloc.h">
+      <Filter>Header Files\old\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Tools\DataTypes.h">
+      <Filter>Header Files\old\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Tools\DebugPrinting.h">
+      <Filter>Header Files\old\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Tools\TwiddleTable.h">
+      <Filter>Header Files\old\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t4_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t32_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_power7\sFFT1_cb_f64v1_t2_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t16_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_r4.h">
+      <Filter>Header Files\old\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_r2.h">
+      <Filter>Header Files\old\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_b4.h">
+      <Filter>Header Files\old\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\vk_generic\sFFT1_cb_tg_b2.h">
+      <Filter>Header Files\old\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t64_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_t8_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_AVX.h">
+      <Filter>Header Files\old\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_t16_AVX.h">
+      <Filter>Header Files\old\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_t32_AVX.h">
+      <Filter>Header Files\old\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_t64_AVX.h">
+      <Filter>Header Files\old\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t16_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t2_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t32_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t4_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t64_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_t8_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_convert.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t16_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t2_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t32_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t4_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t64_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_default\sFFT1_cb_f64v0_t8_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Basic\sFFT1_cb_tk.h">
+      <Filter>Header Files\old\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Block\sFFT1_cb_pb_b2.h">
+      <Filter>Header Files\old\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Block\sFFT1_cb_pb_b4.h">
+      <Filter>Header Files\old\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Block\sFFT1_cb_pb_bk.h">
+      <Filter>Header Files\old\Block</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Tools\Padding.h">
+      <Filter>Header Files\old\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_Power7\sFFT1_cb_f64v1_convert_Power7.h">
+      <Filter>Header Files\old\v1_Power7</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v1_SSE3\sFFT1_cb_f64v1_convert_SSE3.h">
+      <Filter>Header Files\old\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v2_AVX\sFFT1_cb_f64v2_convert_AVX.h">
+      <Filter>Header Files\old\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Tools\BitReverse.h">
+      <Filter>Header Files\old\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\v0_Default\sFFT1_cb_tables_M_Default.h">
+      <Filter>Header Files\old\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Globals.h">
+      <Filter>Header Files\old</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Profiles.h">
+      <Filter>Header Files\old</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\sfft.h">
+      <Filter>Header Files\old</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Profiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\WallClock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Debuggers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\sfft_padding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mm_b2.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mm_b4.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mm_bk.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mc_bk.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mc_b4.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_mc_b2.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_cm_bk.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_cm_b4.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Memory\sFFT1_cb_mb_cm_b2 %28disabled%29.h">
+      <Filter>Header Files\PointBlock_Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\sfft_malloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock\sfft_pb_core_headers.h">
+      <Filter>Header Files\PointBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_Default.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t16_Default.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t32_Default.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t4_Default.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t64_Default.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_t8_Default.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b2.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b3.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vK_Generic\sfft_cb_tg_b4.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b5.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_b7.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_r2.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\vk_Generic\sfft_cb_tg_r4.h">
+      <Filter>Header Files\vk_Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Tables\sfft_cb_tables_M_headers.h">
+      <Filter>Header Files\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Tables\sfft_cb_tables_M_internals.h">
+      <Filter>Header Files\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Tables\sfft_cbv0_tables_M.h">
+      <Filter>Header Files\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Tables\sfft_cbv1_tables_M.h">
+      <Filter>Header Files\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Tables\sfft_cbv2_tables_M.h">
+      <Filter>Header Files\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock\sfft_block_headers.h">
+      <Filter>Header Files\PointBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock\sfft_block_internals.h">
+      <Filter>Header Files\PointBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock\sfft_cb_pb_b2.h">
+      <Filter>Header Files\PointBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_SSE3.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t16_SSE3.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t32_SSE3.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t4_SSE3.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t64_SSE3.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_t8_SSE3.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_AVX.h">
+      <Filter>Header Files\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_t16_AVX.h">
+      <Filter>Header Files\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_t32_AVX.h">
+      <Filter>Header Files\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_t64_AVX.h">
+      <Filter>Header Files\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Cache\sfft_cb_pb_b2.h">
+      <Filter>Header Files\PointBlock_Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Cache\sfft_cb_pb_b4.h">
+      <Filter>Header Files\PointBlock_Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\PointBlock_Cache\sfft_cb_pb_bk.h">
+      <Filter>Header Files\PointBlock_Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v0_Default\sfft_cb_v0_bitreverse.h">
+      <Filter>Header Files\v0_Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v1_SSE3\sfft_cb_f64v1_bitreverse_SSE2.h">
+      <Filter>Header Files\v1_SSE3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\v2_AVX\sfft_cb_f64v2_bitreverse_AVX.h">
+      <Filter>Header Files\v2_AVX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source_v2\Tools\sfft_bitreverse.h">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
