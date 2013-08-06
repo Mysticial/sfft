@@ -1,9 +1,12 @@
 sfft
 ====
 
-This was my FFT project from grad school.
+This is my FFT project from grad school.
 
 sfft = Specialized FFT
+
+For those who are curious: This is **NOT** the same FFT that is used by y-cruncher.<br>
+y-cruncher's FFT takes a completely different approach that's optimized for small sizes.
 
 -----
 
